@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Agence Immo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <header>
+        <span class="brand">Horizon Immobilier</span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="active-menu" id="menu_deroulant"><a href="biens.html">Nos biens</a>
+                <ul class="sous_menu">
+                    <li><a href="biens.html">Acheter</a></li>
+                    <li><a href="biens.html">Louer</a></li>
+                    <li><a href="contact.html">Estimer</a></li>
+                </li>
+                </ul>
+                <li><a href="agence.html">Agence</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <main>
+            <h2>Nos biens</h2>
+            <div id="filtre">
+                <form action="">
+                    <label for="type_bien">Type de bien : </label>
+                    
+                    <select name="type_bien" id="type_bien">
+                        <option value="default">Tous</option>
+                        <option value="appartement">Appartement</option>
+                        <option value="maison">Maison</option>
+                    </select>
+                    <label for="type_bien">Type de bien :</label>
+                    
+                    <select name="ville" id="ville">
+                        <option value="toutes">Toutes</option>
+                        <option value="appartement">Appartement</option>
+                        <option value="maison">Maison</option>
+                    </select>
+                    <label for="budget">Budget :</label>
+                    <select name="budget" id="budget">
+                        <option value="toutes">Tous les budgets</option>
+                        <option value="inf100">< 100 000€</option>
+                        <option value="100_200">100 000€ - 200 000€</option>
+                        <option value="sup_200">< 200 000€</option>
+                    </select>
+                </form>
+            </div>
+            <section id="list_biens">
+                <div class="card-bien">
+                    <div class="avendre">A vendre</div>
+                    <img src="img/bien-maison.jpg" width="300" alt="image maison">
+                    <h3>Maison familiale avec jardin</h3>
+                    <p>Le havre</p>
+                    <p>68m2</p>
+                    <p>3 pièces 5 pièces 4ch </p>
+                    <p class="prix">245 000€</p>
+                    <a href="fiche-bien.html">Voir la fiche</a>
+            </div>
+            <div class="card-bien">
+                <div class="alouer">A louer</div>
+                    <img src="img/bien-appartement.jpg" width="300" height="61%" alt="image maison">
+                    <h3>Maison familiale avec jardin</h3>
+                    <p>Le havre</p>
+                    <p>68m2</p>
+                    <p>3 pièces 5 pièces 4ch </p>
+                    <p class="prix">590€ / Mois</p>
+                    <a href="">Voir la fiche</a>
+            </div>
+            <div class="card-bien">
+                 <div class="avendre">A vendre</div>
+                    <img src="img/bien-studio.jpg" width="300" alt="image maison">
+                    <h3>Maison familiale avec jardin</h3>
+                    <p>Le havre</p>
+                    <p>68m2</p>
+                    <p>3 pièces 5 pièces 4ch </p>
+                    <p class="prix">245 000€</p>
+                    <a href="">Voir la fiche</a>
+            </div>
+            <div class="card-bien">
+                 <div class="avendre">A vendre</div>
+                    <img src="img/bien-studio.jpg" width="300" alt="image maison">
+                    <h3>Maison familiale avec jardin</h3>
+                    <p>Le havre</p>
+                    <p>68m2</p>
+                    <p>3 pièces 5 pièces 4ch </p>
+                    <p class="prix">245 000€</p>
+                    <a href="">Voir la fiche</a>
+            </div>
+            <div class="card-bien">
+                <div class="alouer">A louer</div>
+                    <img src="img/bien-appartement.jpg" width="300" height="61%" alt="image maison">
+                    <h3>Maison familiale avec jardin</h3>
+                    <p>Le havre</p>
+                    <p>68m2</p>
+                    <p>3 pièces 5 pièces 4ch </p>
+                    <p class="prix">660€ / mois</p>
+                    <a href="">Voir la fiche</a>
+            </div>
+            <div class="card-bien">
+                <div class="avendre">A vendre</div>
+                    <img src="img/bien-studio.jpg" width="300" alt="image maison">
+                    <h3>Maison familiale avec jardin</h3>
+                    <p>Le havre</p>
+                    <p>68m2</p>
+                    <p>3 pièces 5 pièces 4ch </p>
+                    <p class="prix">245 000€</p>
+                    <a href="">Voir la fiche</a>
+            </div>
+            </section>
+            <section id="honoraire">
+                <h2>Nos honoraires</h2>
+                <table>
+                    <thead>
+                        <th>Transaction</th>
+                        <th>Tranche de prix</th>
+                        <th>Honoraires</th>
+                        <th>A la charge de </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Vente</td>
+                            <td>Jusqu'a 150 000€</td>
+                            <td>6%</td>
+                            <td>Acquéreur</td>
+                        </tr>
+                        <tr>
+                             <td>150 001 € à 300 000€</td>
+                             <td>5 %</td>
+                             <td>Acquéreur</td>
+                        </tr> 
+                        <tr>
+                             <td>Plus de 300 000€</td>
+                             <td>4 %</td>
+                             <td>Acquéreur</td>
+                        </tr> 
+                        <tr>
+                            <td>Location</td>
+                            <td colspan="3">Un mois de loyer hors charges, partagé entre bailleur et locataire</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </section>
+    <footer>
+        <section class="container-footer">
+        <div>
+            <h3>Horizon immobilier</h3>
+            <p>12 rue de l'espérance, 7600 Le havre</p>
+            <p>02 00 00 00</p>
+        </div>
+        <div>
+            <h3>Navigation</h3>
+             <ul>
+                <li>Accueil</li>
+                <li>Nos biens</li>
+                <li>Agences</li>
+                <li>Contact</li>
+             </ul>
+        </div>
+        <div>
+            <h3>Suivez-nous</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <hr>
+        </section>
+        <hr>
+       <p>© Horizon Immobilier </p> 
+    </footer>
+</body>
+</html>

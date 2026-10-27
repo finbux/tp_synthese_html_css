@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Agence Immo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <header>
+        <span class="brand">Horizon Immobilier</span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li id="menu_deroulant"><a href="biens.html">Nos biens</a>
+                <ul class="sous_menu">
+                    <li><a href="biens.html">Acheter</a></li>
+                    <li><a href="biens.html">Louer</a></li>
+                    <li><a href="contact.html">Estimer</a></li>
+                </li>
+                </ul>
+                <li><a href="agence.html">Agence</a></li>
+                <li class="active-menu"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact-section">
+        <H1>Estimer ou nous contacter</h1>
+        <main class="contact-layout">
+
+                 <form action="" class="contact-form">
+                    <div class="form-row">
+                       <div class="form-group">
+                            <label for="nom">Nom :</label>
+                            <input type="text" placeholder="Dupont" id="nom" required>
+                        </div>
+                        <div class="form-group">    
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" placeholder="Alice" id="prenom" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" placeholder="alice@exemple.com" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone :</label>
+                            <input type="tel" placeholder="0602655733" id="telephone"   pattern="0[1-9]([ .-]?[0-9]{2}){4}" required>
+                        </div>
+                    </div>
+
+                    <fieldset>
+                        <legend>Votre projet</legend>
+                        <input type="radio" id="vendre">
+                        <label for="vendre">Vendre</label>
+                        <input type="radio" id="louer">
+                        <label for="louer">Louer</label>
+                        <input type="radio" id="acheter">
+                        <label for="acheter">Acheter</label>
+                    </fieldset>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bien">Type de bien</label>
+                        <select name="bien" id="bien">
+                            <option value="appartement">Appartement</option>
+                            <option value="maison">Maison</option>
+                            <option value="terrain">Terrain</option>
+                            <option value="local_commercial">Local commercial</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="surface">Surface (m2)</label>
+                        <input type="number" name="surface" id="surface">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pieces">Nombres de pièces</label>
+                        <select name="pieces" id="pieces">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5 et plus</option>
+                        </select>
+                    </div>  
+                </div>
+                    <div class="form-group">
+                       <label for="ville">Ville du bien</label>
+                        <input type="text" id="ville"> 
+                    </div>  
+                </div>
+
+                <fieldset>
+                    <legend>Services souhaités</legend>
+                    <input type="checkbox" id="estimation_gratuite">
+                    <label for="estimation_gratuite">Estimation gratuite</label>
+                    <input type="checkbox" id="photo_pro">
+                    <label for="photo_pro">Photos professionnelles</label>
+                    <input type="checkbox" id="visite_virtuelle">
+                    <label for="visite_virtuelle">Visite virutelle</label>
+                </fieldset>
+
+                <div class="form-group message-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" maxlength="300"></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit">Envoyer</button>
+                    <button class="btn-reset" type="reset"> Rénitialiser</button>
+                </div>
+            </form>
+
+
+        <aside id="coordonnees">
+            <h2>Nos coordonnées</h2>
+            <p>12 rue de l'espérance</p>
+            <p>76000 Le Havre</p>
+            <p>06 03 04 05 50</p>
+            <a href="mailto:contact@horizon-immo.fr">contact@horizon-immo.fr</a>
+            <h3>Horaires d'ouvertures</h3>
+            <p>Lun - ven 09h00 - 18h30</p>
+            <p>Samedi 09h00 - 17h00</p>
+        </aside>
+    </main>
+</section>
+
+
+    <footer>
+        <section class="container-footer">
+        <div>
+            <h3>Horizon immobilier</h3>
+            <p>12 rue de l'espérance, 7600 Le havre</p>
+            <p>02 00 00 00</p>
+        </div>
+        <div>
+            <h3>Navigation</h3>
+             <ul>
+                <li>Accueil</li>
+                <li>Nos biens</li>
+                <li>Agences</li>
+                <li>Contact</li>
+             </ul>
+        </div>
+        <div>
+            <h3>Suivez-nous</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <hr>
+        </section>
+        <hr>
+       <p>© Horizon Immobilier </p> 
+    </footer>
+</body>
+</html>
